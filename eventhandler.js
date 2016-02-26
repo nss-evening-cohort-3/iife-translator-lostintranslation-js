@@ -28,5 +28,8 @@ function clear(){
   var ele=document.getElementsByName("lang");
   for (i=0;i<ele.length;i++){
     ele[i].checked = false;
+
+  //to clear the output
+  document.getElementById("translatedText").innerHTML = "";
   }
 }
