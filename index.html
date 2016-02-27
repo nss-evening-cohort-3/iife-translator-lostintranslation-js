@@ -5,8 +5,8 @@
   <title>Translator</title>
 </head>
 <body>
-  <form>
-    <textarea name="textbox" cols="110" rows="10">Please enter a holiday greeting you would like translated(poorly) into one of the four options below.</textarea>
+
+    <textarea name="textbox" cols="110" rows="10" id="input" placeholder="Please enter a holiday greeting you would like translated(poorly) into one of the four options below."></textarea><br>
     <label for="italian">Italian:</label>
     <input type="radio" id="italian" name="lang"></input>
     <label for="german">German:</label>
@@ -17,14 +17,15 @@
     <input type="radio" id="french" name="lang"></input>
     <button id="transbtn" type="">Translate!</button>
     <button id="clr" type="">Clear</button>
-  </form>
+
   <div id="translatedText"></div>
 
 
   <script src="iife.js"></script>
+  <script src="italian.js"></script>
   <script src="german.js"></script>
   <script src="french.js"></script>
   <script src="spanish.js"></script>
-  <script src="italian.js"></script>
+  <script src="eventhandler.js"></script>
 </body>
 </html>
