@@ -20,8 +20,20 @@ var Translator = (function(originalTranslator){
     result += (pair[transArray[i]]|| transArray[i])+ " ";
     }
 
+    //Capitalize the first letter function
+    var resultArray = result.split(" ");
     
-    document.getElementById("translatedText").innerHTML =result;
+      //delete the last " " string
+    resultArray.pop();
+
+    var capFirstArray=[];
+    for (i=0; i<resultArray.length; i++){
+    capFirstArray.push(resultArray[i].charAt(0).toUpperCase()+ resultArray[i].slice(1).toLowerCase());
+    }
+      //join the array into string and add an "!" mark.
+    var endResult=capFirstArray.join(" ")+"!";
+
+    document.getElementById("translatedText").innerHTML = endResult;
     }
   
   return originalTranslator;  
