@@ -8,10 +8,19 @@ var Translator = (function(original){
     new: "neues",
     year: "jahr"
   }
-  
+
     original.transGerman = function() {
+
     var userInput = document.getElementById("input").value;
-    console.log(userInput);
+    var inputToArray = userInput.split(" ");
+    var output = "";
+    inputToArray.forEach(function(string){ //string refers to the indexed strings in the input array
+      output += lexicon[string]
+    });
+    
+    document.getElementById("translatedText").innerHTML = output;
   }
+
+
 return original;
 })(Translator||{});
