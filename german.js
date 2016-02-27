@@ -1,24 +1,23 @@
 var Translator = (function(original){
 
   var lexicon = {
-    merry: "frohe",
-    christmas: "weihnachten",
-    and: "uhn",
-    happy: "gutes",
-    new: "neues",
-    year: "jahr"
+    MERRY: "frohe",
+    CHRISTMAS: "weihnachten",
+    AND: "uhn",
+    HAPPY: "gutes",
+    NEW: "neues",
+    YEAR: "jahr"
   }
 
     original.transGerman = function() {
 
-    var userInput = document.getElementById("input").value;
+    var userInput = document.getElementById("input").value.toUpperCase();
     var inputToArray = userInput.split(" ");
     var output = "";
     inputToArray.forEach(function(string){ //string refers to the indexed strings in the input array
-      output += lexicon[string] + " "
+      output += (lexicon[string] || string) + " "
     });
-    
-    document.getElementById("translatedText").innerHTML = output;
+      document.getElementById("translatedText").innerHTML = output;
   }
 
 
