@@ -27,9 +27,16 @@ var Translator = (function(originalTranslator) {
     
     transArray.forEach(function(engWord) {
       translatedGreeting += (frenchLexicon[engWord] || engWord) + " ";
-    })
+    });
 
-    document.getElementById("translatedText").innerHTML = translatedGreeting;
+    var newTransArray = translatedGreeting.split(" "); newTransArray.pop()
+    var newTransGreeting = "";
+
+    newTransArray.forEach(function(word){
+      newTransGreeting += word.charAt(0).toUpperCase()+word.slice(1) + " ";
+    });
+
+    document.getElementById("translatedText").innerHTML = newTransGreeting;
     }
   
 

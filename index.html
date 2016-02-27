@@ -6,8 +6,11 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-
-    <textarea name="textbox" cols="75" rows="10" id="input" placeholder="Please enter a holiday greeting you would like translated(poorly) into one of the four options below."></textarea><br>
+  <div id="primary-content">
+    <header>
+      <h1>Almost Universal Holiday Translator</h1>
+    </header>
+    <textarea name="textbox" rows="4" id="input" placeholder="Please enter a holiday greeting you would like translated(poorly) into one of the four options below."></textarea><br>
     <label for="italian">Italian:</label>
     <input type="radio" id="italian" name="lang"></input>
     <label for="german">German:</label>
@@ -18,8 +21,11 @@
     <input type="radio" id="french" name="lang"></input>
     <button id="transbtn" type="">Translate!</button>
     <button id="clr" type="">Clear</button>
+  </div>
 
-  <div id="translatedText"></div>
+  <div id="translatedText">
+    <p>Translated Text Here</p>
+  </div>
 
 
   <script src="iife.js"></script>
