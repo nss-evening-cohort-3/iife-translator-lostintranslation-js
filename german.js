@@ -15,7 +15,7 @@ var Translator = (function(original){
     var inputToArray = userInput.split(" ");
     var output = "";
     inputToArray.forEach(function(string){ //string refers to the indexed strings in the input array
-      output += lexicon[string]
+      output += lexicon[string] + " "
     });
     
     document.getElementById("translatedText").innerHTML = output;
