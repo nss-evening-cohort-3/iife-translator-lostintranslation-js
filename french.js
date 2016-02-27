@@ -4,14 +4,19 @@ var Translator = (function(originalTranslator) {
     merry: "Joyeux",
     christmas: "Noël",
     happy: "Bon",
-    holidays: "vacances",
-    super: "supérieur",
-    baby: "bébé",
+    holidays: "Vacances",
+    super: "Supérieur",
+    baby: "Bébé",
     jesus: "Jésus",
-    day: "jour",
+    day: "Jour",
     and: "et",
     new: "Nouveau",
-    year: "année",
+    year: "Année",
+    tree: "Arbre",
+    mistletoe: "le Gui",
+    meet: "rencontrer",
+    me: "moi",
+    under: "sous"
   };
   
   originalTranslator.transFrench = function(){
@@ -22,9 +27,16 @@ var Translator = (function(originalTranslator) {
     
     transArray.forEach(function(engWord) {
       translatedGreeting += (frenchLexicon[engWord] || engWord) + " ";
-    })
+    });
 
-    document.getElementById("translatedText").innerHTML = translatedGreeting;
+    var newTransArray = translatedGreeting.split(" "); newTransArray.pop()
+    var newTransGreeting = "";
+
+    newTransArray.forEach(function(word){
+      newTransGreeting += word.charAt(0).toUpperCase()+word.slice(1) + " ";
+    });
+
+    document.getElementById("translatedText").innerHTML = newTransGreeting;
     }
   
 

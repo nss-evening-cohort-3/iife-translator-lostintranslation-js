@@ -1,0 +1,73 @@
+body {
+  background-color: #f0f0f0;
+}
+
+
+header {
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 40%;
+  margin: 2% 30%;
+  margin-bottom: 0%;
+  background-color: pink;
+}
+
+h1 {
+  width: 80%;
+  margin: 10px auto;
+  border:1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  color: darkred;
+  font-family: Helvetica;
+}
+
+#input {
+  width: 40%;
+  margin: 2% 30%;
+  margin-bottom: 0;
+}
+
+#primary-content {
+  width: 65%;
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid darkgreen;
+  background-color: lightgreen; 
+  border-radius: 10px;
+  margin: 1% auto;
+  margin-top: 8%;
+  -webkit-box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
+  -moz-box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
+  box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
+}
+
+#transbtn {
+  height: 25px;
+  display: block;
+  margin: 1% auto;
+}
+
+#clr {
+  display: inline-block;
+  height: 25px;
+  margin-bottom: 1%;
+}
+
+textarea {
+  text-align: center;
+}
+
+#translatedText {
+  width: 62.5%;
+  padding: 1% 1%;
+  min-height: 45px;
+  text-align: center;
+  margin: 1% auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 4px 10px 0px rgba(10,77,14,0.61);
+  -moz-box-shadow: 2px 4px 10px 0px rgba(10,77,14,0.61);
+  box-shadow: 2px 4px 10px 0px rgba(10,77,14,0.61);
+}
