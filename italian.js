@@ -1,11 +1,14 @@
 var Translator = (function(originalTranslator){
 
   var pair = {
+  HAVE: "avere",
+  A: "un",
   MERRY: "allegro",
   CHRISTMAS: "natale",
   AND: "e",
   HAPPY: "contento",
-  NEW: "nuovo"
+  NEW: "nuovo",
+  YEAR:"anno"
   }
 
     originalTranslator.transItalian = function(){
@@ -14,7 +17,7 @@ var Translator = (function(originalTranslator){
 
     var result = "";
     for(i=0; i<transArray.length; i++) {
-    result += pair[transArray[i]]+ " ";
+    result += (pair[transArray[i]]|| transArray[i])+ " ";
     }
 
     document.getElementById("translatedText").innerHTML =result;
