@@ -20,6 +20,7 @@ var Translator = (function(originalTranslator){
     result += (pair[transArray[i]]|| transArray[i])+ " ";
     }
 
+    
     document.getElementById("translatedText").innerHTML =result;
     }
   
