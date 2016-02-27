@@ -1,23 +1,51 @@
 var Translator = (function(original){
 
   var lexicon = {
-    MERRY: "frohe",
-    CHRISTMAS: "weihnachten",
-    AND: "uhn",
-    HAPPY: "gutes",
-    NEW: "neues",
-    YEAR: "jahr"
+    merry: "frohe",
+    christmas: "weihnachten",
+    and: "uhn",
+    happy: "gutes",
+    new: "neues",
+    year: "jahr",
+    wish: "wunsch",
+    wishes: "wünscht sich",
+    bright: "hell",
+    day: "tag",
+    peace: "frieden",
+    peaceful: "friedlich",
+    earth: "erde",
+    holiday: "freier",
+    holidays: "freier tag",
+    may: "kann",
+    you: "du",
+    your: "ihre",
+    jesus: "jesus",
+    satan: "der Satan",
+    santa: "Weihnachtsmann",
+    holly: "Stechpalme",
+    jolly: "lustig",
+    have: "haben",
+    a: "ein"
   }
 
     original.transGerman = function() {
 
-    var userInput = document.getElementById("input").value.toUpperCase();
+    var userInput = document.getElementById("input").value;
     var inputToArray = userInput.split(" ");
     var output = "";
     inputToArray.forEach(function(string){ //string refers to the indexed strings in the input array
-      output += (lexicon[string] || string) + " "
+      output += (lexicon[string] || string) + " ";
     });
-      document.getElementById("translatedText").innerHTML = output;
+    var outputArray = output.split(" "); outputArray.pop()
+    var newOutput = "";
+    outputArray.forEach(function(word){
+      newOutput += word.charAt(0).toUpperCase()+word.slice(1) + " ";
+    });
+    
+    
+    // reduceArray = outputArray.reduce(function())
+
+    document.getElementById("translatedText").innerHTML = newOutput;
   }
 
 
