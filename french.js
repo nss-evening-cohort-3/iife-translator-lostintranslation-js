@@ -19,10 +19,10 @@ var Translator = (function(originalTranslator) {
     var originalText= document.getElementById("input").value.toLowerCase(); 
     var transArray = originalText.split(" ");
     var translatedGreeting = "";
-
-    for(i=0; i<transArray.length; i++) {
-        translatedGreeting += frenchLexicon[transArray[i]]+ " ";
-      };
+    
+    transArray.forEach(function(engWord) {
+      translatedGreeting += (frenchLexicon[engWord] || engWord) + " ";
+    })
 
     document.getElementById("translatedText").innerHTML = translatedGreeting;
     }
