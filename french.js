@@ -4,14 +4,19 @@ var Translator = (function(originalTranslator) {
     merry: "Joyeux",
     christmas: "Noël",
     happy: "Bon",
-    holidays: "vacances",
-    super: "supérieur",
-    baby: "bébé",
+    holidays: "Vacances",
+    super: "Supérieur",
+    baby: "Bébé",
     jesus: "Jésus",
-    day: "jour",
+    day: "Jour",
     and: "et",
     new: "Nouveau",
-    year: "année",
+    year: "Année",
+    tree: "Arbre",
+    mistletoe: "le Gui",
+    meet: "rencontrer",
+    me: "moi",
+    under: "sous"
   };
   
   originalTranslator.transFrench = function(){
