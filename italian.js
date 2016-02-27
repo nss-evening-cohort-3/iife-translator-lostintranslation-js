@@ -17,7 +17,7 @@ var Translator = (function(originalTranslator){
 
     var result = "";
     for(i=0; i<transArray.length; i++) {
-    result += (pair[transArray[i]]|| transArray[i])+ " ";
+    result += (pair[transArray[i]]|| transArray[i].fontcolor("red"))+ " ";
     }
 
     //Capitalize the first letter function
