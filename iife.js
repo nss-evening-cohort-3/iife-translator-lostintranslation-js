@@ -1,4 +1,4 @@
 var Translator = (function(){
-  
+
 
 }());
