@@ -1,19 +1,25 @@
 body {
   background-color: #f0f0f0;
+  
+
+  
 }
 
 
 header {
+
   border: 1px solid red;
   border-radius: 10px;
-  width: 40%;
-  margin: 2% 30%;
+  width: 70%;
+  margin: 2% 15%;
   margin-bottom: 0%;
   background-color: pink;
+  display: block;
+
 }
 
 h1 {
-  width: 80%;
+  width: 100%;
   margin: 10px auto;
   border:1px solid black;
   border-radius: 10px;
@@ -32,7 +38,8 @@ h1 {
 
 #primary-content {
   font-size: 2vw;
-  width: 65%;
+  max-height: 400px;
+  width: 85%;
   font-family: sans-serif;
   text-align: center;
   border: 1px solid darkgreen;
@@ -43,6 +50,12 @@ h1 {
   -webkit-box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
   -moz-box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
   box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
+}
+
+.dancers {
+  border: 50%;
+  float: left;  
+  max-width: 20%;
 }
 
 .navbar {
