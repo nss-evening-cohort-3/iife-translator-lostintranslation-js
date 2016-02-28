@@ -45,6 +45,23 @@ h1 {
   box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
 }
 
+.navbar {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: lightgreen;
+  background-image: linear-gradient(lightgreen, #39951d);
+}
+
+.navbtn {
+  font-size: 1.4vw;
+  padding-top: 6px;
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+  display: inline-block;
+  height: 30px;
+  min-width: 15%;
+}
+
 #transbtn {
   height: 25px;
   display: block;
