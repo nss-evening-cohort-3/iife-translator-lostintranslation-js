@@ -26,7 +26,6 @@ var Translator = (function(originalTranslator) {
     var translatedGreeting = "";
     
     transArray.forEach(function(engWord) {
-      // var boldWord = engWord.style.fontWeight;
       translatedGreeting += (frenchLexicon[engWord] || engWord.bold()) + " ";
     });
 
