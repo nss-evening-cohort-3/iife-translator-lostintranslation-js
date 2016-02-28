@@ -19,8 +19,7 @@ var Translator = (function(originalTranslator) {
 
   originalTranslator.transSpanish = function() {
     var caps= document.getElementById("input").value.toUpperCase();
-    console.log(caps)
-    // var notTrans =  
+    console.log(caps)  
     var translation = caps.split(" "); 
     var answer = "";
 
@@ -33,19 +32,9 @@ var Translator = (function(originalTranslator) {
      
     }
 
+  
+
     
-
-    // function returnEng(originalTranslator) {
-    //   var userEng = originalTranslator.getElementById("translatedText");
-    //   if (input.value === commentPair) {
-    //     return translatedText;
-
-    //   } else {
-    //     return returnEng;
-    //   }
-    // }
-
-    // document.getElementById("translatedText").innerHTML = userEng;
 
     document.getElementById("translatedText").innerHTML = answer;
     }
