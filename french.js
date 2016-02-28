@@ -38,6 +38,7 @@ var Translator = (function(originalTranslator) {
 
     document.getElementById("translatedText").innerHTML = newTransGreeting;
     }
+
   
 
   return originalTranslator;
