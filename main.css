@@ -4,7 +4,7 @@ body {
 
 
 header {
-  border: 1px solid red;
+  border: 3px solid red;
   border-radius: 10px;
   width: 40%;
   margin: 2% 30%;
@@ -14,8 +14,9 @@ header {
 
 h1 {
   width: 80%;
+  font-size: 0.9em;
   margin: 10px auto;
-  border:1px solid black;
+  border:2px solid darkred;
   border-radius: 10px;
   background-color: white;
   text-align: center;
@@ -35,7 +36,7 @@ h1 {
   width: 65%;
   font-family: sans-serif;
   text-align: center;
-  border: 1px solid darkgreen;
+  border: 4px solid darkgreen;
   background-color: lightgreen; 
   border-radius: 10px;
   margin: 1% auto;
@@ -54,6 +55,7 @@ h1 {
 
 .navbtn {
   font-size: 1.4vw;
+  color: #darkgreen;
   padding-top: 6px;
   border: 1px solid lightgreen;
   border-radius: 5px;
@@ -85,8 +87,40 @@ textarea {
   text-align: center;
   margin: 1% auto;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 3px solid darkred;
   -webkit-box-shadow: 2px 4px 10px 0px rgba(10,77,14,0.61);
   -moz-box-shadow: 2px 4px 10px 0px rgba(10,77,14,0.61);
   box-shadow: 2px 4px 10px 0px rgba(10,77,14,0.61);
 }
+
+.button {
+   border-top: 1px solid #f7f7f7;
+   background: #f24848;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ed8080), to(#f24848));
+   background: -webkit-linear-gradient(top, #ed8080, #f24848);
+   background: -moz-linear-gradient(top, #ed8080, #f24848);
+   background: -ms-linear-gradient(top, #ed8080, #f24848);
+   background: -o-linear-gradient(top, #ed8080, #f24848);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #f28889;
+   background: #f28889;
+   color: #f0f0f0;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
