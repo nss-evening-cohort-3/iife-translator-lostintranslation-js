@@ -20,24 +20,24 @@ var Translator = (function(originalTranslator) {
   };
   
   originalTranslator.transFrench = function(){
-
     var originalText= document.getElementById("input").value.toLowerCase(); 
     var transArray = originalText.split(" ");
     var translatedGreeting = "";
     
     transArray.forEach(function(engWord) {
-      translatedGreeting += (frenchLexicon[engWord] || engWord) + " ";
+      translatedGreeting += (frenchLexicon[engWord] || engWord.bold()) + " ";
     });
 
     var newTransArray = translatedGreeting.split(" "); newTransArray.pop()
     var newTransGreeting = "";
 
     newTransArray.forEach(function(word){
-      newTransGreeting += word.charAt(0).toUpperCase()+word.slice(1) + " ";
+      newTransGreeting += word.charAt(0).toUpperCase()+ word.substr(1) + " ";
     });
 
     document.getElementById("translatedText").innerHTML = newTransGreeting;
-    }
+    };
+
   
 
   return originalTranslator;
