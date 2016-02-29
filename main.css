@@ -1,15 +1,31 @@
 body {
   background-color: #f0f0f0;
+  
+
+  
 }
 
+.gif-contain {
+  max-width: 200px;
+  z-index: 999;
+  overflow: show;
+  margin: auto;
+  padding-bottom: auto;
+}
+
+.dancers {  
+  max-width: 100%;
+}
 
 header {
   border: 3px solid red;
   border-radius: 10px;
-  width: 40%;
-  margin: 2% 30%;
+  width: 70%;
+  margin: 2% 15%;
   margin-bottom: 0%;
   background-color: pink;
+  display: block;
+
 }
 
 h1 {
@@ -33,6 +49,7 @@ h1 {
 
 #primary-content {
   font-size: 2vw;
+  max-height: 400px;
   width: 65%;
   font-family: sans-serif;
   text-align: center;
@@ -40,11 +57,13 @@ h1 {
   background-color: lightgreen; 
   border-radius: 10px;
   margin: 1% auto;
-  margin-top: 8%;
+  margin-top: ;
   -webkit-box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
   -moz-box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
   box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
 }
+
+
 
 .navbar {
   padding-bottom: 5px;
