@@ -20,7 +20,6 @@ var Translator = (function(originalTranslator) {
   };
   
   originalTranslator.transFrench = function(){
-
     var originalText= document.getElementById("input").value.toLowerCase(); 
     var transArray = originalText.split(" ");
     var translatedGreeting = "";
