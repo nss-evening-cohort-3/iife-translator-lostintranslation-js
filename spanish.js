@@ -25,8 +25,8 @@ var Translator = (function(originalTranslator) {
 
      for(i=0; i<translation.length; i++) {
       if (commentPair[translation[i]] === undefined) {
-        answer += translation[i].toLowerCase() + " ";
-      } else {
+        answer += translation[i].toLowerCase() + " ";    
+        } else {
         answer += commentPair[translation[i]]+ " ";  
       }
      

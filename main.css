@@ -5,6 +5,17 @@ body {
   
 }
 
+.gif-contain {
+  max-width: 200px;
+  z-index: 999;
+  overflow: show;
+  margin: auto;
+  padding-bottom: auto;
+}
+
+.dancers {  
+  max-width: 100%;
+}
 
 header {
 
@@ -19,8 +30,8 @@ header {
 }
 
 h1 {
-  width: 100%;
-  margin: 10px auto;
+  max-width: 100%;
+  margin: 10px;
   border:1px solid black;
   border-radius: 10px;
   background-color: white;
@@ -46,17 +57,13 @@ h1 {
   background-color: lightgreen; 
   border-radius: 10px;
   margin: 1% auto;
-  margin-top: 8%;
+  margin-top: ;
   -webkit-box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
   -moz-box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
   box-shadow: 4px 6px 13px 0px rgba(143,47,79,0.48);
 }
 
-.dancers {
-  border: 50%;
-  float: left;  
-  max-width: 20%;
-}
+
 
 .navbar {
   padding-bottom: 5px;
